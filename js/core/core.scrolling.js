@@ -323,7 +323,7 @@ function _fnScrollDraw ( settings )
 
 	// If sorting or filtering has occurred, jump the scrolling back to the top
 	// only if we aren't holding the position
-	if ( (settings.bSorted || settings.bFiltered) && ! settings._drawHold ) {
+	if ( (settings.bSorted || settings.bFiltered || settings.bPaginated) && ! settings._drawHold ) {
 		divBodyEl.scrollTop = 0;
 	}
 }

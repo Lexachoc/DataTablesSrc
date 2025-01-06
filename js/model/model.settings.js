@@ -550,6 +550,12 @@ DataTable.models.oSettings = {
 
 	/**
 	 * Flag attached to the settings object so you can check in the draw
+	 * callback if paging has been done in the draw.
+	 */
+	"bPaginated": false,
+
+	/**
+	 * Flag attached to the settings object so you can check in the draw
 	 * callback if sorting has been done in the draw. Deprecated in favour of
 	 * events.
 	 *  @deprecated

@@ -468,7 +468,8 @@ function _fnDraw( oSettings, ajaxComplete )
 	/* Call all required callback functions for the end of a draw */
 	_fnCallbackFire( oSettings, 'aoDrawCallback', 'draw', [oSettings], true );
 
-	/* Draw is complete, sorting and filtering must be as well */
+	/* Draw is complete, paging, sorting and filtering must be as well */
+	oSettings.bPaginated= false;
 	oSettings.bSorted = false;
 	oSettings.bFiltered = false;
 	oSettings.bDrawing = false;

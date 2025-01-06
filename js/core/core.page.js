@@ -66,6 +66,8 @@ function _fnPageChange ( settings, action, redraw )
 	var changed = settings._iDisplayStart !== start;
 	settings._iDisplayStart = start;
 
+	settings.bPaginated = true;
+
 	_fnCallbackFire( settings, null, changed ? 'page' : 'page-nc', [settings] );
 
 	if ( changed && redraw ) {
